@@ -60,7 +60,7 @@
 
 ​	What’s more, the biggest difference between Unet and Unet 3+ is that Unet 3+ implements the full-scale skip connection [3]. Full-scale skip connection enhances the information capture ability in full scales and remain the channel (which is 256 in our Unet 3+) of the feature map in the decoder. 
 
-​	Fig. 2.2 showcases the interconnection between the encoder and $$X_{DE}^2$$ as well as the interconnection between the decoder sub-networks and $$X_{DE}^2$$ . Similar to Unet, $$X_{DE}^2$$  can receive the feature map from same-scale encoder layer $$X_{EN}^2$$ , while the information from low-scale in the encoder $$X_{EN}^1$$ which gains by non-overlapping Max-pooling can also be received by $$X_{DE}^2$$ through the encoder-decoder skip connection, which is differ from Unet. While the interconnection between each neural in decoder can transmit feature map from larger-scale generates by bilinear augmentation in the decoder $$X_{DE}^3$$ and $$X_{DE}^4$$ to $$X_{DE}^2$$. 
+​	Fig. 2.2 showcases the interconnection between the encoder and $X_{DE}^2$as well as the interconnection between the decoder sub-networks and $X_{DE}^2$ . Similar to Unet, $X_{DE}^2$  can receive the feature map from same-scale encoder layer $X_{EN}^2$ , while the information from low-scale in the encoder $X_{EN}^1$ which gains by non-overlapping Max-pooling can also be received by $X_{DE}^2$ through the encoder-decoder skip connection, which is differ from Unet. While the interconnection between each neural in decoder can transmit feature map from larger-scale generates by bilinear augmentation in the decoder $X_{DE}^3$ and $X_{DE}^4$ to $X_{DE}^2$. 
 
 <img src=".\res_pic\Unet3+.png" style="zoom:50%;" />
 
